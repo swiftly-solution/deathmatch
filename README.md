@@ -28,7 +28,7 @@
 ```json
 {
     "deathmatch": {
-        "host": "...",
+        "hostname": "...",
         "username": "...",
         "password": "...",
         "database": "...",
