@@ -1,5 +1,5 @@
 function GetPluginAuthor()
-    return "SkuZZi"
+    return "Swiftly Solutions"
 end
 
 function GetPluginVersion()
@@ -7,9 +7,9 @@ function GetPluginVersion()
 end
 
 function GetPluginName()
-    return "Brand New Lua Plugin"
+    return "Swiftly - Deathmatch"
 end
 
 function GetPluginWebsite()
-    return "https://docs.swiftlycs2.net"
+    return "https://github.com/swiftly-solution/deathmatch"
 end
