@@ -2,7 +2,7 @@ AddEventHandler("OnPluginStart", function(event)
     db = Database("deathmatch")
     if not db:IsConnected() then return end
 
-    db:Query("CREATE TABLE IF NOT EXISTS `"..config:Fetch("deathmatch.tablename").."` (`steamid` varchar(128) NOT NULL, `primarygun` varchar(128) NOT NULL, `secondarygun` varchar(128) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;")
+    db:Query("CREATE TABLE IF NOT EXISTS `players_guns` (`steamid` varchar(128) NOT NULL, `primarygun` varchar(128) NOT NULL, `secondarygun` varchar(128) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;")
     RegisterMenus()
 end)
 
