@@ -19,24 +19,13 @@
 </p>
 
 ---
+### Requirements 🛠️
+- [Cookies](https://github.com/swiftly-solution/cookies/releases)
 
 ### Installation 👀
 
 1. Download the newest [release](https://github.com/swiftly-solution/deathmatch/releases).
 2. Everything is drag & drop, so i think you can do it!
-3. Setup database connection in `addons/swiftly/configs/databases.json` with the key `deathmatch` like in the following example:
-```json
-{
-    "deathmatch": {
-        "hostname": "...",
-        "username": "...",
-        "password": "...",
-        "database": "...",
-        "port": 3306
-    }
-}
-```
-(!) Don't forget to replace the `...` with the actual values !!
 
 4. While developing the plugin, I have been using a config with a few settings, that works for a basic Deathmatch/FFA server, if you want to use the same settings as me, use the provided cfg in the archive, if not, make your own settings (cvars).
 
