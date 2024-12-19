@@ -16,8 +16,8 @@ AddEventHandler("OnPlayerSpawn", function(event)
     if player:IsFirstSpawn() then return end
     
     if not player:IsFakeClient() then
-        local primaryGun = exports["cookies"]:GetPlayerCookie("deathmatch.primarygun") or "weapon_ak47"
-        local secondaryGun = exports["cookies"]:GetPlayerCookie("deathmatch.secondarygun") or "weapon_deagle"
+        local primaryGun = exports["cookies"]:GetPlayerCookie(playerid, "deathmatch.primarygun") or "weapon_ak47"
+        local secondaryGun = exports["cookies"]:GetPlayerCookie(playerid, "deathmatch.secondarygun") or "weapon_deagle"
         player:GetWeaponManager():GiveWeapon(tostring(primaryGun)) 
         player:GetWeaponManager():GiveWeapon(tostring(secondaryGun))
     end
