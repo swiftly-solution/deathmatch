@@ -1,4 +1,8 @@
 {
     "prefix": "[{LIME}SWIFTLY{DEFAULT}]",
+    "EnableSnipers": false,
+    "EnableGunsWithScopes": false,
+    "ColorPlayer": "255,0,0,255",
+    "HitSound": "sounds/ui/csgo_ui_contract_type2.vsnd_c",
     "RegenHP": 5
 }

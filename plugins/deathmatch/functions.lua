@@ -19,3 +19,12 @@ function GetWeaponFromSlot(player, slot_id)
     end
     return nil
 end
+
+function SetColor(player, color)
+    local playerModelEntity = CBaseModelEntity(player:CCSPlayerPawn())
+    if not playerModelEntity:IsValid() then return end
+    if player:CBaseEntity().Health > 0 then
+        playerModelEntity.RenderMode = RenderMode_t.kRenderGlow
+        playerModelEntity.Render = color
+    end
+end
