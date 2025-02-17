@@ -53,7 +53,7 @@ commands:Register("sg", function(playerid, args, argsCount, silent)
 
     local currentweapon = GetWeaponFromSlot(player, gear_slot_t.GEAR_SLOT_RIFLE)
     currentweapon:Remove()
-    UpdateWeapon(player, "weapon_sg553", "primary")
+    UpdateWeapon(player, "weapon_sg556", "primary")
     ReplyToCommand(playerid, config:Fetch("deathmatch.prefix"),
         FetchTranslation("deathmatch.changed.weapon"):gsub("{WEAPON_NAME}", "SG-553"))
     player:HideMenu()
